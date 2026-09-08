@@ -17,8 +17,8 @@ export default function Home() {
                         ENGINEERING SYSTEMS & HIGH-PRECISION<br />INTERACTIVE EXPERIENCES.
                     </p>
                     <div id='action_bt'>
-                        <a id='ex_bt'>explore selected work ↓</a>
-                        <a id='th_bt'>get in touch →</a>
+                        <a id='ex_bt' href='#projects'>explore selected work ↓</a>
+                        <a id='th_bt' href='#contact'>get in touch →</a>
                     </div>
                 </div>
                 <div id='b_right'>
@@ -40,7 +40,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div id='h_footer'>
+                00
+            </div>
         </div>
     );
 }

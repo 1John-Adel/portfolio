@@ -21,9 +21,9 @@ export default function Nav() {
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav" id='nav_links'>
                         <a className={`nav-link ${Active === 'home' ? 'active' : ''}`} aria-current="page" href="#home" onClick={() => setActive('home')}>00 Home</a>
-                        <a className={`nav-link ${Active === 'about' ? 'active' : ''}`} href="#" onClick={() => setActive('about')}> 01 About</a>
-                        <a className={`nav-link ${Active === 'project' ? 'active' : ''}`} href="#" onClick={() => setActive('project')}>02 Projects</a>
-                        <a className={`nav-link ${Active === 'contact' ? 'active' : ''}`} href="#" onClick={() => setActive('contact')}>03 Contact</a>
+                        <a className={`nav-link ${Active === 'about' ? 'active' : ''}`} href="#about" onClick={() => setActive('about')}> 01 About</a>
+                        <a className={`nav-link ${Active === 'project' ? 'active' : ''}`} href="#projects" onClick={() => setActive('project')}>02 Projects</a>
+                        <a className={`nav-link ${Active === 'contact' ? 'active' : ''}`} href="#contact" onClick={() => setActive('contact')}>03 Contact</a>
                     </div>
                 </div>
                 <div id="av">
