@@ -112,6 +112,7 @@ nav {
 @media (max-width:992px) {
     .navbar-toggler {
         order: 2;
+        margin-left: auto;
     }
     
     #av {
