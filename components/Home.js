@@ -41,8 +41,15 @@ export default function Home() {
                 </div>
             </div>
             <div id='h_footer'>
-                00
+                <section id='f_left'>
+                    <span></span>
+                    CORE LANGUAGES: PYTHON / C (SYSTEMS) / JAVASCRIPT (ES6+)
+                </section>
+                <section id='f_right'>
+                    DISTRIBUTED LOGIC / WEBGL RENDER PIPELINES / SWISS TYPOGRAPHY UI
+                </section>
             </div>
+            <div id='zeros'>00</div>
         </div>
     );
 }

@@ -208,6 +208,7 @@
     #a_head {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
     
     #a_body {

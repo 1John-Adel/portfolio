@@ -4,7 +4,6 @@
     flex-direction: column;
     padding: 48px;
     position: relative;
-    padding-bottom: 100px;
 
     div {
         width: 100%;
@@ -53,19 +52,19 @@
                 color: rgb(26, 28, 27);
                 font-size: clamp(1.25rem, 0.688rem + 2.5vw, 2.25rem);
                 font-weight: 600;
-                
+
                 strong {
                     font-size: clamp(2.25rem, 0.563rem + 7.5vw, 5.25rem);
                     font-weight: 700;
                     letter-spacing: -3px;
                 }
             }
-            
+
             #action_bt {
                 display: flex;
                 gap: 16px;
                 padding-top: 40px;
-                
+
                 a {
                     padding: 16px 24px;
                     text-transform: uppercase;
@@ -76,29 +75,29 @@
                     text-decoration: none;
                     transition: 0.4s;
                 }
-                
+
                 #ex_bt {
                     background-color: black;
                     color: white;
                 }
-                
+
                 #ex_bt:hover {
                     background-color: rgb(177, 37, 0);
                 }
-                
+
                 #th_bt {
                     background-color: white;
                     color: black;
                     border: 1px solid black;
                 }
-                
+
                 #th_bt:hover {
                     background-color: black;
                     color: white;
                 }
             }
         }
-        
+
         #b_right {
             display: flex;
             flex-direction: column;
@@ -106,9 +105,9 @@
             padding-left: 40px;
             border-left: 1px solid rgb(227, 226, 224);
             z-index: 2;
-            
+
             div {
-                
+
                 span {
                     font-family: var(--jetbrains-mono);
                     color: rgb(177, 37, 0);
@@ -116,7 +115,7 @@
                     font-weight: 600;
                     letter-spacing: 0.5px;
                 }
-                
+
                 p {
                     color: rgb(26, 28, 27);
                     font-size: clamp(0.813rem, 0.742rem + 0.313vw, 0.938rem);
@@ -125,7 +124,7 @@
                     border-bottom: 1px solid rgb(227, 226, 224);
                     padding-bottom: 16px;
                 }
-                
+
                 section {
                     font-family: var(--jetbrains-mono);
                     background-color: rgb(244, 243, 241);
@@ -138,8 +137,42 @@
             }
         }
     }
-    
+
     #h_footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+        padding-top: 16px;
+        border-top: 1px solid rgb(227, 226, 224);
+
+        #f_left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--jetbrains-mono);
+            color: rgb(68, 71, 72);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5;
+
+            span {
+                width: 6px;
+                height: 6px;
+                background-color: rgb(177, 37, 0);
+                border-radius: 50px;
+            }
+        }
+
+        #f_right {
+            font-family: var(--jetbrains-mono);
+            color: rgb(68, 71, 72);
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5;
+        }
+    }
+
+    #zeros {
         position: absolute;
         width: 100%;
         height: fit-content;
@@ -165,6 +198,15 @@
         #b_left {
             margin-bottom: 50px;
         }
+
+        #b_right {
+            padding: 0 20px !important;
+            border-right: 1px solid rgb(227, 226, 224);
+        }
+
+        #action_bt {
+            justify-content: center;
+        }
     }
 
     #h_header {
@@ -172,6 +214,18 @@
     }
 
     #h_footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #zeros {
         top: 100vh !important;
+    }
+}
+
+@media (max-width:445px) {
+    #action_bt {
+        flex-direction: column;
     }
 }
