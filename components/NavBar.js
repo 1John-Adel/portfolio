@@ -1,10 +1,36 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./styles/NavBar.css";
-import Image from "next/image";
 
 export default function Nav() {
   const [Active, setActive] = useState("home");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+
+          const id = entry.target.id;
+
+          if (id === "skills") {
+            setActive("about");
+          } else {
+            setActive(id);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      },
+    );
+
+    const sections = document.querySelectorAll("main > div");
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -35,14 +61,12 @@ export default function Nav() {
               className={`nav-link ${Active === "home" ? "active" : ""}`}
               aria-current="page"
               href="#home"
-              onClick={() => setActive("home")}
             >
               00 Home
             </a>
             <a
               className={`nav-link ${Active === "about" ? "active" : ""}`}
               href="#about"
-              onClick={() => setActive("about")}
             >
               {" "}
               01 About
@@ -50,14 +74,12 @@ export default function Nav() {
             <a
               className={`nav-link ${Active === "project" ? "active" : ""}`}
               href="#projects"
-              onClick={() => setActive("project")}
             >
               02 Projects
             </a>
             <a
               className={`nav-link ${Active === "contact" ? "active" : ""}`}
               href="#contact"
-              onClick={() => setActive("contact")}
             >
               03 Contact
             </a>
