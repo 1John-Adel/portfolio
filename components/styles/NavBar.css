@@ -14,8 +14,8 @@ nav {
     padding: 8px 48px !important;
     position: fixed !important;
     width: 100%;
-    background-color: rgb(250, 249, 247);
-    border-bottom: 1px solid rgb(227, 226, 224);
+    background-color: var(--bg-sub);
+    border-bottom: 1px solid var(--border);
     z-index: 100;
     user-select: none;
 }
@@ -26,7 +26,7 @@ nav {
 
     #title {
         font-family: var(--space-grotesk);
-        color: rgb(26, 28, 27);
+        color: var(--text);
         font-size: 18px;
         font-weight: 600;
         text-transform: uppercase;
@@ -35,7 +35,7 @@ nav {
         align-items: center;
 
         span {
-            color: rgb(68, 71, 72);
+            color: var(--text-muted);
             font-family: var(--jetbrains-mono);
             font-size: 10px;
             letter-spacing: 1px;
@@ -66,7 +66,7 @@ nav {
                 position: absolute;
                 height: 1.5px;
                 width: 100%;
-                background-color: rgb(177, 37, 0);
+                background-color: var(--accent);
                 bottom: 5px;
                 left: 0;
                 transition: 0.4s;
@@ -88,12 +88,12 @@ nav {
         display: flex;
         gap: 4px;
         align-items: center;
-        background-color: rgb(244, 243, 241);
-        border: 1px solid rgb(227, 226, 224);
+        background-color: var(--bg);
+        border: 1px solid var(--border);
         padding: 2px 8px;
 
         span {
-            background-color: rgb(177, 37, 0);
+            background-color: var(--accent);
             border-radius: 50px;
             width: 8px;
             height: 8px;
@@ -105,7 +105,7 @@ nav {
             font-family: var(--jetbrains-mono);
             font-size: 10px;
             font-weight: 600;
-            color: rgb(68, 71, 72);
+            color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -126,7 +126,7 @@ nav {
         border-radius: 0;
         font-family: var(--jetbrains-mono);
         font-size: 10px;
-        color: rgb(26, 28, 27);
+        color: var(--text);
         font-weight: 500;
         text-transform: uppercase;
         gap: 4px;
@@ -146,12 +146,12 @@ nav {
                 width: 100%;
                 height: 1.5px;
                 will-change: transform;
-                background-color: rgb(26, 28, 27);
+                background-color: var(--text);
                 transition: 0.4s;
             }
 
             .red {
-                background-color: rgb(177, 37, 0);
+                background-color: var(--accent);
             }
         }
     }

@@ -1,3 +1,13 @@
+:root {
+  --bg: rgb(244, 243, 241);
+  --bg-sub: rgb(250, 249, 247);
+  --bg-hover: rgb(241, 239, 238);
+  --border: rgb(227, 226, 224);
+  --text: rgb(26, 28, 27);
+  --text-muted: rgb(68, 71, 72);
+  --accent: rgb(177, 37, 0);
+}
+
 html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;

@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     padding: 64px 48px;
-    background-color: rgb(244, 243, 241);
-    border-top: 1px solid rgb(227, 226, 224);
-    border-bottom: 1px solid rgb(227, 226, 224);
+    background-color: var(--bg);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     
     #a_head {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid rgb(227, 226, 224);
+        border-bottom: 1px solid var(--border);
         padding-bottom: 24px;
 
         section {
             font-family: var(--jetbrains-mono);
-            color: rgb(68, 71, 72);
+            color: var(--text-muted);
             font-size: 10px;
             font-weight: 600;
             letter-spacing: 1px;
@@ -24,13 +24,13 @@
             
             span {
                 font-family: var(--jetbrains-mono);
-                color: rgb(177, 37, 0);
+                color: var(--accent);
                 font-size: 12px;
                 font-weight: 700;
             }
             
             p {
-                color: rgb(26, 28, 27);
+                color: var(--text);
                 font-family: var(--space-grotesk);
                 font-size: clamp(1.25rem, 0.688rem + 2.5vw, 2.25rem);
                 font-weight: 600;
@@ -54,7 +54,7 @@
             
             span {
                 font-family: var(--jetbrains-mono);
-                color: rgb(177, 37, 0);
+                color: var(--accent);
                 font-size: 10px;
                 font-weight: 600;
             }
@@ -63,20 +63,20 @@
                 font-family: var(--font-inter);
                 font-size: clamp(0.938rem, 0.832rem + 0.469vw, 1.125rem);
                 font-weight: 400;
-                color: rgb(26, 28, 27);
+                color: var(--text);
             }
             
             h6 {
                 font-family: var(--font-inter);
                 font-size: clamp(0.813rem, 0.742rem + 0.313vw, 0.938rem);
                 font-weight: 400;
-                color: rgb(68, 71, 72);
+                color: var(--text-muted);
             }
             
             div {
-                background-color: rgb(250, 249, 247);
+                background-color: var(--bg-sub);
                 padding: 24px;
-                border: 1px solid rgb(227, 226, 224);
+                border: 1px solid var(--border);
                 display: flex;
                 flex-direction: column;
                 gap: 8px;
@@ -98,7 +98,7 @@
         #b_right {
             span {
                 font-family: var(--jetbrains-mono);
-                color: rgb(177, 37, 0);
+                color: var(--accent);
                 font-size: 10px;
                 font-weight: 600;
             }
@@ -109,7 +109,7 @@
                 display: flex;
                 justify-content: space-between;
                 background-color: white;
-                border: 1px solid rgb(227, 226, 224);
+                border: 1px solid var(--border);
                 
                 section {
                     display: flex;
@@ -123,7 +123,7 @@
                     }
                     
                     h5 {
-                        color: rgb(68, 71, 72);
+                        color: var(--text-muted);
                         font-family: var(--font-inter);
                         font-size: clamp(0.625rem, 0.449rem + 0.781vw, 0.938rem);
                         font-weight: 400;
@@ -143,7 +143,7 @@
                         font-family: var(--jetbrains-mono);
                         font-size: 10px;
                         font-weight: 600;
-                        color: rgb(68, 71, 72);
+                        color: var(--text-muted);
                         text-transform: uppercase;
                         text-align: center;
                         padding-top: 3px;
@@ -152,15 +152,15 @@
             }
             
             #bottom_right {
-                background-color: rgb(250, 249, 247);
+                background-color: var(--bg-sub);
                 padding: 24px;
-                border: 1px solid rgb(227, 226, 224);
+                border: 1px solid var(--border);
                 border-top: none;
                 display: flex;
                 flex-direction: column;
                 
                 span {
-                    color: rgb(26, 28, 27);
+                    color: var(--text);
                 }
                 
                 >section {
@@ -170,15 +170,15 @@
                     margin-top: 10px;
                     
                     div {
-                        background-color: rgb(244, 243, 241);
-                        border: 1px solid rgb(227, 226, 224);
+                        background-color: var(--bg);
+                        border: 1px solid var(--border);
                         display: flex;
                         gap: 8px;
                         padding: 8px;
                         
                         section {
                             font-family: var(--jetbrains-mono);
-                            color: rgb(177, 37, 0);
+                            color: var(--accent);
                             font-size: 10px;
                             font-weight: 700;
                             
@@ -186,14 +186,14 @@
                                 font-family: var(--font-inter);
                                 font-size: 13px;
                                 font-weight: 600;
-                                color: rgb(26, 28, 27);
+                                color: var(--text);
                             }
 
                             h6 {
                                 font-family: var(--jetbrains-mono);
                                 font-size: 10px;
                                 font-weight: 600;
-                                color: rgb(68, 71, 72);
+                                color: var(--text-muted);
                                 margin: 0;
                             }
                         }
