@@ -6,24 +6,24 @@ export default function Nav() {
   const [Active, setActive] = useState("home");
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
+    const options = {
+      root: null,
+      threshold: 0.5,
+    };
+    const main = document.querySelector("main");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-          const id = entry.target.id;
+        const id = entry.target.id;
 
-          if (id === "skills") {
-            setActive("about");
-          } else {
-            setActive(id);
-          }
-        });
-      },
-      {
-        threshold: 0.5,
-      },
-    );
+        if (id === "skills") {
+          setActive("about");
+        } else {
+          setActive(id);
+        }
+      });
+    }, options);
 
     const sections = document.querySelectorAll("main > div");
 
@@ -38,6 +38,10 @@ export default function Nav() {
         <div className="navbar-brand" href="#" id="title">
           John Adel
           <span>— CS × AI</span>
+        </div>
+        <div id="av">
+          <span></span>
+          <p>AVAILABLE FOR SELECT ROLES</p>
         </div>
         <button
           className="navbar-toggler"
@@ -72,7 +76,7 @@ export default function Nav() {
               01 About
             </a>
             <a
-              className={`nav-link ${Active === "project" ? "active" : ""}`}
+              className={`nav-link ${Active === "projects" ? "active" : ""}`}
               href="#projects"
             >
               02 Projects
@@ -84,10 +88,6 @@ export default function Nav() {
               03 Contact
             </a>
           </div>
-        </div>
-        <div id="av">
-          <span></span>
-          <p>AVAILABLE FOR SELECT ROLES</p>
         </div>
       </div>
     </nav>
