@@ -8,7 +8,7 @@ const projects = [
     tag: "CREATIVE TOOL",
     title: "ALPACA GENERATOR",
     subtitle: "Customizable Avatar Builder & Image Export Utility",
-    description: `Built an interactive and responsive web application as a practical project to master front-end fundamentals, 
+    description: `Built an interactive and responsive web application as a practical project to master HTML & CSS and JavaScript fundamentals, 
     allowing users to customize and download stylized alpaca images. 
     Implemented dynamic DOM manipulation for real-time customization and managed feature states using pure JavaScript. 
     Integrated canvas-based image export functionality for downloading user designs.`,
