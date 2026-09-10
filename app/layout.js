@@ -25,7 +25,7 @@ const inter = Inter({
 export const metadata = {
   title: "John Adel — Software Engineer",
   description:
-    "Computer Science & Artificial Intelligence student building high-precision interactive experiences.",
+    "Computer Science & Artificial Intelligence student specializing in high-precision interactive experiences, performant software systems, and modern web architectures.",
   openGraph: {
     title: "John Adel — Software Engineer",
     description:
@@ -34,7 +34,7 @@ export const metadata = {
 
     images: [
       {
-        url: "https://john-pfolio.vercel.app/opengraph-image",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "John Adel Portfolio Preview",
