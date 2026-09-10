@@ -1,5 +1,5 @@
 #skills {
-    padding: 64px 48px;
+    padding: clamp(1.5rem, 0.875rem + 5vw, 4rem) clamp(1rem, 0.5rem + 4vw, 3rem);
     background-color: var(--bg-sub);
 
     #sk_head {

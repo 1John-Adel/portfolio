@@ -6,6 +6,8 @@
   --text: rgb(26, 28, 27);
   --text-muted: rgb(68, 71, 72);
   --accent: rgb(177, 37, 0);
+  --black: black;
+  --white: white;
 }
 
 html, body {
@@ -34,7 +36,7 @@ p {
   }
 }
 
-@media (max-width: 405px) {
+@media (max-width: 332px) {
   main {
     padding-top: 85px;
   }

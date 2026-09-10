@@ -11,7 +11,7 @@
 }
 
 nav {
-    padding: 8px 48px !important;
+    padding: 8px clamp(1rem, 0.143rem + 4.571vw, 3rem) !important;
     position: fixed !important;
     width: 100%;
     background-color: var(--bg-sub);
@@ -47,7 +47,7 @@ nav {
 
         #nav_links {
             order: 1;
-            gap: 24px;
+            gap: clamp(0.75rem, 0.429rem + 1.714vw, 1.5rem);
 
             a {
                 scale: 1;
@@ -126,7 +126,7 @@ nav {
         place-items: center;
     }
 
-    #navbarNavAltMarkup{
+    #navbarNavAltMarkup {
         order: 3;
     }
 
@@ -173,11 +173,11 @@ nav {
     }
 
     .navbar-toggler:hover, .navbar-toggler:focus {
-        background-color: black;
-        color: white;
+        background-color: var(--black);
+        color: var(--white);
 
         div:not(.red) {
-            background-color: white;
+            background-color: var(--white);
         }
     }
 

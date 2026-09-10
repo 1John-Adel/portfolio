@@ -8,7 +8,8 @@ export default function Nav() {
   useEffect(() => {
     const options = {
       root: null,
-      threshold: 0.5,
+      rootMargin: "-50% 0px -50% 0px",
+      threshold: 0,
     };
     const main = document.querySelector("main");
     const observer = new IntersectionObserver((entries) => {
@@ -29,7 +30,6 @@ export default function Nav() {
 
     sections.forEach((section) => observer.observe(section));
 
-    return () => observer.disconnect();
   }, []);
 
   return (

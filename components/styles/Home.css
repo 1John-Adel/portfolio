@@ -2,8 +2,9 @@
     background-color: var(--bg-sub);
     display: flex;
     flex-direction: column;
-    padding: 48px;
+    padding: clamp(1rem, 0.5rem + 4vw, 3rem);
     position: relative;
+    overflow-y: hidden;
 
     div {
         width: 100%;
@@ -77,8 +78,8 @@
                 }
 
                 #ex_bt {
-                    background-color: black;
-                    color: white;
+                    background-color: var(--black);
+                    color: var(--white);
                 }
 
                 #ex_bt:hover {
@@ -86,14 +87,14 @@
                 }
 
                 #th_bt {
-                    background-color: white;
-                    color: black;
-                    border: 1px solid black;
+                    background-color: var(--white);
+                    color: var(--black);
+                    border: 1px solid var(--black);
                 }
 
                 #th_bt:hover {
-                    background-color: black;
-                    color: white;
+                    background-color: var(--black);
+                    color: var(--white);
                 }
             }
         }
@@ -142,8 +143,9 @@
         display: flex;
         justify-content: space-between;
         margin-top: 64px;
-        padding-top: 16px;
+        padding: 16px 0;
         border-top: 1px solid var(--border);
+        z-index: 2;
 
         #f_left {
             display: flex;
@@ -177,17 +179,16 @@
         width: 100%;
         height: fit-content;
         color: var(--bg-hover);
-        font-size: 220px;
+        font-size: clamp(6.25rem, 3.036rem + 17.143vw, 13.75rem);
         font-weight: 600;
         font-family: var(--space-grotesk);
         text-align: end;
         line-height: 0.75;
-        letter-spacing: -10px;
-        top: 150px;
+        letter-spacing: clamp(-0.625rem, 0.000rem - 1.0vw, -0.3125rem);
+        bottom: -10px;
         left: 0;
         user-select: none;
         z-index: 1;
-        overflow: hidden;
     }
 }
 
@@ -217,10 +218,6 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    }
-
-    #zeros {
-        top: 100vh !important;
     }
 }
 
