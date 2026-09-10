@@ -29,7 +29,7 @@ export const metadata = {
   openGraph: {
     title: "John Adel — Software Engineer",
     description:
-      "I am a Computer Science & Artificial Intelligence student at Helwan University with an obsession for software engineering, performant software systems, and tactile digital interfaces. I treat code with the rigor of classical typography and modernist architecture: structural soundness beneath the surface, zero extraneous weight, and relentless attention to human tactile feedback.",
+      "I am a Computer Science & Artificial Intelligence student at Helwan University with an obsession for software engineering, performant software systems, and tactile digital interfaces.",
     url: "https://john-pfolio.vercel.app",
 
     images: [
