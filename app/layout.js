@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
             __html: `
               (function() {
                 const savedTheme = localStorage.getItem('theme');
-                if (savedTheme === 'light') {
+                if (savedTheme === 'light' || savedTheme === null) {
                   document.documentElement.classList.remove('dark');
                 } else {
                   document.documentElement.classList.add('dark');
