@@ -101,7 +101,7 @@ Visualization & Analysis: Built interactive visualizations (Confusion Matrices &
               X = df[<span className="red">'clean_text'</span>]<br/>
               y = df[<span className="red">'label'</span>]<br/>
               X_train, X_test, y_train, y_test = <span className="red">train_test_split</span>(<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;X, y, <span className="red">test_size</span> = 0.4, <span className="red">random_state</span> = 42, <span className="red">stratif</span>y = y<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;X, y, <span className="red">test_size</span> = 0.4, <span className="red">random_state</span> = 42, <span className="red">stratify</span> = y<br/>
               )
             </section>
             <section>

@@ -14,7 +14,7 @@ export default function Card({ project }) {
       <section className="card-body">
         {project.image ? (
           <div className="img-div">
-            <Image src={`/assets/${project.image}`} fill alt={project.title}/>
+            <Image src={`/assets/${project.image}`} fill draggable={false} alt={project.title}/>
             <div className="context">{project.context}<span>{project.code}</span></div>
           </div>
         ) : (
