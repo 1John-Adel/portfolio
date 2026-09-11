@@ -10,7 +10,7 @@ export default function Home() {
             </div>
             <div id='h_body'>
                 <div id='b_left'>
-                    <span>SOFTWARE ENGINEER & AI PRACTITIONER</span>
+                    <span>CS & AI STUDENT — SOFTWARE ENGINEERING</span>
                     <p>
                         <strong>JOHN ADEL.</strong>
                         <br />
@@ -24,11 +24,11 @@ export default function Home() {
                 <div id='b_right'>
                     <div>
                         <span>[ DOMAIN FOCUS ]</span>
-                        <p>Full-Stack Web Architectures, Algorithmic Engineering & Generative AI Interfaces.</p>
+                        <p>Full-Stack Web Development & Problem Solving.</p>
                     </div>
                     <div>
                         <span>[ CURRENT ENGAGEMENT ]</span>
-                        <p>Available for Software Engineering Internships, Lab Research & Select Technical Collaborations.</p>
+                        <p>Available for Software Engineering Internships and Research Assistant roles.</p>
                     </div>
                     <div>
                         <span>[ LOCATION & ZONE ]</span>
@@ -46,7 +46,7 @@ export default function Home() {
                     CORE LANGUAGES: PYTHON / C (SYSTEMS) / JAVASCRIPT (ES6+)
                 </section>
                 <section id='f_right'>
-                    DISTRIBUTED LOGIC / WEBGL RENDER PIPELINES / SWISS TYPOGRAPHY UI
+                    CLEAN CODE / RESPONSIVE DESIGN / PROBLEM SOLVING
                 </section>
             </div>
             <div id='zeros'>00</div>

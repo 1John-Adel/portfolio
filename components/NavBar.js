@@ -41,7 +41,7 @@ export default function Nav() {
         </div>
         <div id="av">
           <span></span>
-          <p>AVAILABLE FOR SELECT ROLES</p>
+          <p>OPEN TO INTERNSHIPS & ENTRY ROLES</p>
         </div>
         <button
           className="navbar-toggler"

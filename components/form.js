@@ -56,7 +56,7 @@ export default function Form() {
             <option>Software Engineering Internship</option>
             <option>Undergraduate Research / Lab Collaboration</option>
             <option>Full-Stack Web & AI Systems Project</option>
-            <option>Technical Inquiry & General Discourse</option>
+            <option>General Discourse</option>
           </select>
         </div>
         <div>
