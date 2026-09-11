@@ -2,6 +2,7 @@ import { Space_Grotesk, JetBrains_Mono, Inter } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "@/components/BootstrapClient";
 import Nav from "@/components/NavBar";
+import { useTheme } from "@/components/themeBtn";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -51,7 +52,24 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${inter.variable}`}
+      suppressHydrationWarning={true}
     >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                  document.documentElement.classList.add('dark');
+                } else {
+                  document.documentElement.classList.remove('dark');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <BootstrapClient />
         <Nav />

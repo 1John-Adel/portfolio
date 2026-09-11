@@ -3,6 +3,7 @@ import About from "@/components/about";
 import Projects from "@/components/projects";
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
+import ThemeBtn from "@/components/themeBtn";
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
         <Contact />
       </main>
       <Footer />
+      <ThemeBtn />
     </>
   );
 }

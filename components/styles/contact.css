@@ -109,7 +109,7 @@
                         font-weight: 600;
                         text-transform: uppercase;
                         letter-spacing: 0.5px;
-                        transition: 0.4s;
+                        transition: 0.5s ease-in-out;
                     }
 
                     button:hover {
@@ -141,12 +141,12 @@
                     text-decoration: none;
                     text-transform: uppercase;
                     font-weight: 600;
-                    transition: 0.4s;
+                    transition: 0.5s ease-in-out;
 
                     div {
                         font-size: 12px;
                         color: var(--text);
-                        transition: 0.4s;
+                        transition: 0.5s ease-in-out;
                     }
 
                     span {
@@ -212,14 +212,15 @@
                     flex-direction: column;
                     font-family: var(--jetbrains-mono);
                     color: var(--text);
-
+                    
                     label {
                         letter-spacing: 0.5px;
                         font-size: 10px;
                         font-weight: 600;
                     }
-
+                    
                     input, textarea, select {
+                        color: var(--text);
                         font-weight: 500;
                         font-size: clamp(0.688rem, 0.661rem + 0.143vw, 0.75rem);
                         margin-top: 2px;
@@ -229,7 +230,7 @@
                         resize: none;
                         width: 100%;
                         text-overflow: ellipsis;
-                        transition: 0.4s;
+                        transition: 0.5s ease-in-out;
                     }
 
                     input:focus, textarea:focus, select:focus {
@@ -246,7 +247,7 @@
                     font-family: var(--jetbrains-mono);
                     font-size: 12px;
                     font-weight: 600;
-                    transition: 0.4s;
+                    transition: 0.5s ease-in-out;
                 }
 
                 button:hover {

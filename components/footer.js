@@ -39,7 +39,7 @@ export default function Footer() {
       </section>
       <section>
         <p>
-          © 2025 JOHN ADEL. ALL RIGHTS RESERVED. ARCHITECTURAL FOLIO ENGINE.
+          © 2026 JOHN ADEL. ALL RIGHTS RESERVED. ARCHITECTURAL FOLIO ENGINE.
         </p>
         <span>
           <div></div>SYS_STATUS // ACTIVE & STABLE

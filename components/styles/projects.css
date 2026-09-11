@@ -49,6 +49,7 @@
             border: 1px solid var(--border);
 
             .card-title {
+                background-color: var(--white);
                 display: flex;
                 justify-content: space-between;
                 padding: 8px 16px;
@@ -190,7 +191,7 @@
                             font-weight: 600;
                             text-decoration: none;
                             text-transform: uppercase;
-                            transition: 0.4s;
+                            transition: 0.5s ease-in-out;
                         }
 
                         .repo {

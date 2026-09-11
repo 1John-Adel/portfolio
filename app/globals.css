@@ -12,6 +12,53 @@
   --white: white;
 }
 
+html.dark {
+  --bg: rgb(20, 20, 22);
+  --bg-sub: rgb(14, 14, 16);
+  --border: rgb(39, 39, 42);
+  --text: rgb(244, 244, 245);
+  --text-muted: rgb(161, 161, 170);
+  --black: white;
+  --white: black;
+  --accent: rgb(255, 77, 36);
+  --bg-hover: rgb(22, 22, 23);
+
+  #ex_bt:hover, .repo:hover, #c_body button:hover {
+    color: white !important;
+  }
+
+  #th_bt {
+    border-color: rgb(63, 63, 70) !important;
+  }
+
+  #th_bt:hover, .demo:hover {
+    background-color: rgb(31, 31, 35) !important;
+    border-color: rgb(244, 244, 245) !important;
+    color: rgb(244, 244, 245) !important;
+  }
+
+  #up_right section div {
+    background-color: var(--accent) !important;
+    color: white !important;
+  }
+
+  .details>div>section>div, #b_right>div>section, .code_body {
+    color: rgb(244, 244, 245) !important;
+  }
+
+  #c_body>section>section>div {
+    background-color: rgb(24, 24, 27) !important;
+  }
+
+  #footer {
+    background-color: rgb(10, 10, 12) !important;
+  }
+}
+
+* {
+  transition: background-color 0.5s ease-in-out, border-color 0.5s ease-in-out, color 0.5s ease-in-out, outline-color 0.5s ease-in-out;
+}
+
 html, body {
   -ms-overflow-style: none;
   scrollbar-width: none;

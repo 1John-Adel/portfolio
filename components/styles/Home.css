@@ -74,7 +74,7 @@
                     text-align: center;
                     font-weight: 600;
                     text-decoration: none;
-                    transition: 0.4s;
+                    transition: 0.5s ease-in-out;
                 }
 
                 #ex_bt {
@@ -87,7 +87,6 @@
                 }
 
                 #th_bt {
-                    background-color: var(--white);
                     color: var(--black);
                     border: 1px solid var(--black);
                 }
